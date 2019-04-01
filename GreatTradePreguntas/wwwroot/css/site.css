@@ -35,3 +35,48 @@ body {
         display: none;
     }
 }
+
+/*CSS Questions module*/
+#question_title {
+    color: black;
+    
+    text-align: center;
+}
+
+#container {
+    margin: 30px;
+    width: 60%;
+    height: auto;
+    align-content: center;
+}
+#inpQuestion{
+    width: 89%;
+}
+.containerQuestions {
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+#titleQuestion {
+    color: black;
+    text-align: center;
+    top: -15px;
+    width: auto;
+    left: 1%;
+    position: absolute;
+    background: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+#question {
+    display: inline-block;
+    line-height: 30px;
+    /*padding-left: 30px;*/
+    
+    font-size: 17px;
+}

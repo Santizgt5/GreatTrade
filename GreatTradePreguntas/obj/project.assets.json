@@ -7651,7 +7651,7 @@
       ]
     },
     "Newtonsoft.Json/11.0.2": {
-      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
       "path": "newtonsoft.json/11.0.2",
       "files": [
@@ -12532,23 +12532,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\Felipe Castillo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\GreatTradePreguntas\\GreatTradePreguntas\\GreatTradePreguntas.csproj",
+      "projectUniqueName": "C:\\Users\\Felipe Castillo\\Source\\Repos\\GreatTradePreguntas\\GreatTradePreguntas\\GreatTradePreguntas.csproj",
       "projectName": "GreatTradePreguntas",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\GreatTradePreguntas\\GreatTradePreguntas\\GreatTradePreguntas.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\GreatTradePreguntas\\GreatTradePreguntas\\obj\\",
+      "projectPath": "C:\\Users\\Felipe Castillo\\Source\\Repos\\GreatTradePreguntas\\GreatTradePreguntas\\GreatTradePreguntas.csproj",
+      "packagesPath": "C:\\Users\\Felipe Castillo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Felipe Castillo\\Source\\Repos\\GreatTradePreguntas\\GreatTradePreguntas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Felipe Castillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

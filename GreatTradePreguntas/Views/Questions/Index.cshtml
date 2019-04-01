@@ -1,60 +1,27 @@
-﻿@model IEnumerable<GreatTradePreguntas.Models.Question>
+﻿@*@model GreatTradePreguntas.Models.Question*@
+@model IEnumerable<GreatTradePreguntas.Models.Question>
 
-@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+<link rel="stylesheet" href="~/css/site.css" />
 
-<h2>Index</h2>
+<div id="container">
+    
+    @await Html.PartialAsync("~/Views/Questions/MakeQuestions.cshtml", new GreatTradePreguntas.Models.Question())
+    
+    
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Pregunta)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Answer)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Questioner)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Pregunta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Answer)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Questioner)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Product.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+   
+    <div class="containerQuestions">
+        <div id="titleQuestion">Preguntas de otros vendedores</div>
+
+        @foreach (var item in Model)
+        {
+            <label id="question">@Html.DisplayFor(modelItem => item.Pregunta)</label>
+            <br />
+            <input type="checkbox" checked />
+            <label id="answer">@Html.DisplayFor(modelItem => item.Answer)</label>
+            <br />
+        }
+    </div>
+</div>
+
+

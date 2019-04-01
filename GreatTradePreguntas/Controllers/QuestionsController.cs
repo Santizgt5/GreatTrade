@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GreatTradePreguntas.Data;
 using GreatTradePreguntas.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace GreatTradePreguntas.Controllers
 {
@@ -16,14 +17,53 @@ namespace GreatTradePreguntas.Controllers
 
         public QuestionsController(ApplicationDbContext context)
         {
+
+            
             _context = context;
+            
+           
+            
+            
+
         }
 
         // GET: Questions
         public async Task<IActionResult> Index()
         {
+            
             var applicationDbContext = _context.Question.Include(q => q.Product);
+            
+            
+            
+
             return View(await applicationDbContext.ToListAsync());
+            //return View();
+        }
+        public IActionResult MakeQuestions()
+        {
+            //var applicationDbContext = _context.Question.Include(q => q.Product);
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> MakeQuestions(String Pregunta)
+        {
+            Question q = new Question
+            {
+                //Pregunta = form["Pregunta"],
+                Pregunta = Pregunta,
+                Answer = "Yes",
+                Questioner = "Felipe",
+                Status = 1,
+                ProductId = 1,
+
+            };
+            
+            
+            _context.Add(q);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
+            //return View();
         }
 
         // GET: Questions/Details/5
